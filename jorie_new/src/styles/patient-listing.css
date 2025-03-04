@@ -1,0 +1,58 @@
+
+/* Custom styles for the Patient Listing page */
+.patient-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status-alive {
+    color: #2e7d32;
+  }
+  
+  .status-deceased {
+    color: #c62828;
+  }
+  
+  .cluster-card {
+    transition: all 0.2s ease;
+  }
+  
+  .cluster-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selected-cluster {
+    background-color: #e5deff !important;
+    border-color: #8B5CF6 !important;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2) !important;
+  }
+  
+  .table-container {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .alternating-row:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  
+  .cluster-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Gender Icons */
+  .gender-icon {
+    width: 28px;
+    height: 28px;
+    filter: invert(30%);
+  }
+  
+  .gender-female:hover, .gender-male:hover {
+    filter: invert(40%) sepia(50%) saturate(1000%) hue-rotate(200deg);
+  }
