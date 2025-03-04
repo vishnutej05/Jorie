@@ -139,13 +139,11 @@ export function Sidebar({ onViewChange, currentView }) {
   return (
     <div className="h-screen w-64 border-r bg-sidebar flex flex-col">
       <div className="p-4 border-b flex items-center justify-center">
-        <div className="bg-gray-800 p-2 rounded-md" style={{ width: "60%" }}>
           <img 
-            src="/lovable-uploads/Logo.png" 
+            src="/lovable-uploads/Logo2.png" 
             alt="Logo" 
-            className="h-8 w-auto" 
+            className="h-16 w-auto object-contain rounded-md" 
           />
-        </div>
       </div>
       
       <div className="p-4 text-sm text-gray-500">Menu</div>
