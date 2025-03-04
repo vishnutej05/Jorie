@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../styles/login.css";
-import { registerUser, loginUser } from "../utils/auth";
 import Bulb from "../assets/Bulb.png";
 
 function Login() {
@@ -121,7 +120,16 @@ function Login() {
                                 <span>Or continue with</span>
                             </div>
 
-                            <button type="button" className="auth-button google-button">
+                            <button type="button" className="auth-button google-button" 
+                                onClick={() =>
+                                    alert("Google signIn is yet to be developed")
+                                }>
+                                <img 
+                                    src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" 
+                                    alt="Google"
+                                    className="w-5 h-5"
+                                />
+                                
                                 Sign in with Google
                             </button>
                         </form>

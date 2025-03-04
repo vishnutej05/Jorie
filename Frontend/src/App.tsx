@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
-import PatientListing from "./pages/PatientListing"; // Import the new component
+// import PatientListing from "./pages/PatientListing";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +24,7 @@ const App = () => {
             {/* Protected Routes */}
             <Route element={<PrivateRoute />}>
               <Route path="/" element={<Index />} />
-              <Route path="/patients" element={<PatientListing />} /> {/* Add the new route */}
+              {/* <Route path="/patients" element={<PatientListing />} />  */}
             </Route>
 
             {/* Catch-all */}

@@ -141,8 +141,8 @@ export function Sidebar({ onViewChange, currentView }) {
       <div className="p-4 border-b flex items-center justify-center">
         <div className="bg-gray-800 p-2 rounded-md" style={{ width: "60%" }}>
           <img 
-            src="/lovable-uploads/05a17db1-495d-4d34-bfd6-1510d150c5da.png" 
-            alt="AI Logo" 
+            src="/lovable-uploads/Logo.png" 
+            alt="Logo" 
             className="h-8 w-auto" 
           />
         </div>

@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { PlusCircle } from "lucide-react";
 
 type PatientData = {
   id: string;
@@ -21,9 +23,14 @@ export function PatientDatabase({
 }: PatientDatabaseProps) {
   return (
     <div className="rounded-md border bg-white overflow-hidden">
-      <div className="p-4 bg-gray-50 border-b">
-        <h3 className="font-medium">Patient Database</h3>
+      <div className="flex items-center justify-between p-4 bg-gray-50 border-b">
+        <h3 className="text-lg font-semibold text-gray-800">Patient Database</h3>
+        <Button className="flex items-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg">
+          <PlusCircle className="mr-2 h-5 w-5" />
+          New Patient
+        </Button>
       </div>
+
       
       <div className="grid grid-cols-3 gap-4 p-4 border-b bg-gray-50">
         <div className="text-sm font-medium text-gray-500">Patient ID</div>

@@ -9,21 +9,21 @@ import { PlusCircle } from "lucide-react";
 
 const patients = [
   {
-    id: "Patient Id",
-    name: "Bhabesh Chandra Das",
-    address: "V-79,2nd Floor, Sec-12 Noida, Gautam Buddha Nagar UP-201301"
+    "id": "45987",
+    "name": "Amit Verma",
+    "address": "A-45, 3rd Floor, Sector-15, Noida, UP-201301"
   },
   {
-    id: "Patient Id",
-    name: "Bhabesh Chandra Das",
-    address: "V-79,2nd Floor, Sec-12 Noida, Gautam Buddha Nagar UP-201301"
+    "id": "38214",
+    "name": "Rohit Sharma",
+    "address": "B-12, Ground Floor, Indirapuram, Ghaziabad, UP-201014"
   },
   {
-    id: "Patient Id",
-    name: "Bhabesh Chandra Das",
-    address: "V-79,2nd Floor, Sec-12 Noida, Gautam Buddha Nagar UP-201301"
+    "id": "52763",
+    "name": "Priya Gupta",
+    "address": "C-78, Tower 5, Gomti Nagar, Lucknow, UP-226010"
   }
-];
+]
 
 const patientSummary = "On 13th February 2024, the patient presented with sepsis and was recommended 14 days of medication. CBC and KFT tests were advised, and an ENT department visit for cleansing was scheduled. On 1st February 2024, the patient continued treatment for Chronic Kidney Disease (CKD) and was prescribed 10 days of medication. Earlier, from 19th January to 27th January 2024, the patient was admitted for various tests.";
 
@@ -46,10 +46,10 @@ const dateLabels = [
 
 // Power BI report URLs
 const powerBIReports = {
-  patientRiskProfiler: "https://app.powerbi.com/reportEmbed?reportId=e711c02c-fda7-499a-8437-dc9d968e176a&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b%22",
-  patientTimeline: "https://app.powerbi.com/reportEmbed?reportId=d2cd67e9-3dd8-4ef1-a5fa-4acfdf344f1e&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b%22",
-  personaComparison: "https://app.powerbi.com/reportEmbed?reportId=d2cd67e9-3dd8-4ef1-a5fa-4acfdf344f1e&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b%22",
-  adherenceScorecard: "https://app.powerbi.com/reportEmbed?reportId=fe973fc3-cd2b-4442-b3eb-d9c0441bdc11&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b%22"
+  patientRiskProfiler: "https://app.powerbi.com/reportEmbed?reportId=e711c02c-fda7-499a-8437-dc9d968e176a&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b",
+  patientTimeline: "https://app.powerbi.com/reportEmbed?reportId=d2cd67e9-3dd8-4ef1-a5fa-4acfdf344f1e&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b",
+  personaComparison: "https://app.powerbi.com/reportEmbed?reportId=d2cd67e9-3dd8-4ef1-a5fa-4acfdf344f1e&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b",
+  adherenceScorecard: "https://app.powerbi.com/reportEmbed?reportId=fe973fc3-cd2b-4442-b3eb-d9c0441bdc11&autoAuth=true&ctid=39d814ab-a56f-478d-8b14-f4f1e99cfe1b"
 };
 
 const Index = () => {
@@ -69,7 +69,7 @@ const Index = () => {
             style={{ border: "none", minHeight: "calc(100vh - 150px)" }}
             src={powerBIReports[currentView]}
             allowFullScreen={true}
-          ></iframe>
+          ></iframe>  
         </div>
       );
     }
@@ -170,12 +170,12 @@ const Index = () => {
               {currentView === "personaComparison" && "Persona Comparison"}
               {currentView === "adherenceScorecard" && "Adherence & Engagement Scorecard"}
             </h1>
-            {currentView === "patientTimeline" && (
-              <Button className="bg-teal-600 hover:bg-teal-700">
-                <PlusCircle className="mr-2 h-4 w-4" />
-                New Patient
-              </Button>
-            )}
+            {/* {currentView === "patientTimeline" && ( */}
+              {/* // <Button className="bg-teal-600 hover:bg-teal-700">
+              //   <PlusCircle className="mr-2 h-4 w-4" />
+              //   New Patient
+              // </Button> */}
+            {/* // )} */}
           </div>
           
           {renderContent()}
