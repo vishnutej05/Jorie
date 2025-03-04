@@ -157,9 +157,11 @@ export function Sidebar({ onViewChange, currentView }) {
           onClick={() => toggleSection("clinicalInteraction")}
         >
           <SidebarSubItem title="Care Voyage: Patient Recommendation" 
-            onClick={() => onViewChange("guidelineAdherence")}
-            isActive={currentView === "guidelineAdherence"} />
-          <SidebarSubItem title="Referral Management" onClick={undefined} />
+            onClick={() => onViewChange("patientrecommendations")}
+            isActive={currentView === "patientrecommendations"} />
+          <SidebarSubItem title="Referral Management" 
+            onClick={() => onViewChange("referralmanagement")}
+            isActive={currentView === "referralmanagement"} />
           <SidebarSubItem title="Outbound Campaigns" onClick={undefined} />
           <SidebarSubItem title="Patient Experience Survey" onClick={undefined} />
           <SidebarSubItem title="Utilization Review and Management" onClick={undefined} />

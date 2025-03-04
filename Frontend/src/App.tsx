@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
+import ReferralManagementPage from "./pages/ReferralManagement";
 // import PatientListing from "./pages/PatientListing";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => {
             {/* Protected Routes */}
             <Route element={<PrivateRoute />}>
               <Route path="/" element={<Index />} />
+              {/* <Route path="/rm" element={<ReferralManagementPage />} /> added via sidebar options instead */}
               {/* <Route path="/patients" element={<PatientListing />} />  */}
             </Route>
 
